@@ -15,7 +15,7 @@
 <body>
 
 <div class="container" ng-controller="indexController">
-    <h1>Happy Market</h1>
+    <h1>Eco Market</h1>
 
     <h3>Фильтр</h3>
     <form novalidate ng-submit="fillTable()">
@@ -46,7 +46,7 @@
         <tbody>
         <tr ng-repeat="p in ProductsList">
             <td>{{p.title}}</td>
-            <td>{{p.price}}</td>
+            <td>{{p.cost}}</td>
             <td>
 <!--                <button class="btn btn-danger" ng-click="deleteProductById(p.id)">Удалить товар</button>-->
             </td>

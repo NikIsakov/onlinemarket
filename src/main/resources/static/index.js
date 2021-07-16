@@ -1,5 +1,5 @@
 angular.module('app', []).controller('indexController', function ($scope, $http) {
-    const contextPath = 'http://localhost:8189/happy';
+    const contextPath = 'http://localhost:8189/market';
 
     // $scope.fillTable = function () {
     //     $http.get(contextPath + '/products')

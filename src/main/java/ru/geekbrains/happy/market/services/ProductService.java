@@ -22,10 +22,15 @@ public class ProductService {
     }
 
     public List<Product> findAllByPrice(int min, int max) {
-        return productRepository.findAllByPriceBetween(min, max);
+        return productRepository.findAllByCostGreaterThanEqualAndCostLessThan(min, max);
     }
 
     public Product saveOrUpdate(Product product) {
         return productRepository.save(product);
+    }
+
+
+    public void deleteById(Long id) {
+        productRepository.deleteById(id);
     }
 }
